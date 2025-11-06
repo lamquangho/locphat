@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL || 'https://locphat.onrender.com';
+const API_URL = 'https://locphat.onrender.com';
 
 const api = axios.create({
-  baseURL: API_URL,
+  baseURL: `${API_URL}/api`,
   headers: {
     'Content-Type': 'application/json',
   },
