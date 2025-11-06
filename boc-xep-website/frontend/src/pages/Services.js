@@ -1,54 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { getServices } from '../services/api';
+import { servicesData } from '../data/staticData';
 import './Services.css';
 
 const Services = () => {
-  const [services, setServices] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const services = servicesData;
   const location = useLocation();
 
   useEffect(() => {
-    const fetchServices = async () => {
-      try {
-        const data = await getServices();
-        setServices(data);
-        setLoading(false);
-
-        // Scroll to service if hash exists in URL
-        if (location.hash) {
+    // Scroll to service if hash exists in URL
+    if (location.hash) {
+      setTimeout(() => {
+        // Get ID from hash (remove #)
+        const id = location.hash.substring(1);
+        // Use getElementById instead of querySelector (works with IDs starting with numbers)
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Add highlight effect
+          element.style.backgroundColor = '#f0f4ff';
+          element.style.transition = 'background-color 2s';
           setTimeout(() => {
-            // Get ID from hash (remove #)
-            const id = location.hash.substring(1);
-            // Use getElementById instead of querySelector (works with IDs starting with numbers)
-            const element = document.getElementById(id);
-            if (element) {
-              element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              // Add highlight effect
-              element.style.backgroundColor = '#f0f4ff';
-              element.style.transition = 'background-color 2s';
-              setTimeout(() => {
-                element.style.backgroundColor = '';
-              }, 2000);
-            }
-          }, 100);
+            element.style.backgroundColor = '';
+          }, 2000);
         }
-      } catch (error) {
-        console.error('Error fetching services:', error);
-        setLoading(false);
-      }
-    };
-
-    fetchServices();
+      }, 100);
+    }
   }, [location.hash]);
-
-  if (loading) {
-    return (
-      <div className="loading">
-        <div className="spinner"></div>
-      </div>
-    );
-  }
 
   return (
     <div className="services-page">

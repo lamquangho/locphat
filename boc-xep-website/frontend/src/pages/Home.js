@@ -1,39 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { getServices, getPricing } from '../services/api';
+import { servicesData, pricingData } from '../data/staticData';
 import './Home.css';
 
 const Home = () => {
-  const [services, setServices] = useState([]);
-  const [pricing, setPricing] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const [servicesData, pricingData] = await Promise.all([
-          getServices(),
-          getPricing()
-        ]);
-        setServices(servicesData);
-        setPricing(pricingData);
-        setLoading(false);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-        setLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="loading">
-        <div className="spinner"></div>
-      </div>
-    );
-  }
+  const services = servicesData;
+  const pricing = pricingData;
 
   return (
     <div className="home">

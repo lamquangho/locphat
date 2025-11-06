@@ -1,40 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { getProjects } from '../services/api';
+import React, { useState } from 'react';
+import { projectsData } from '../data/staticData';
 import './Projects.css';
 
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const projects = projectsData;
   const [filter, setFilter] = useState('all');
-
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const data = await getProjects();
-        setProjects(data);
-        setLoading(false);
-      } catch (error) {
-        console.error('Error fetching projects:', error);
-        setLoading(false);
-      }
-    };
-
-    fetchProjects();
-  }, []);
 
   const categories = ['all', ...new Set(projects.map(p => p.category))];
 
   const filteredProjects = filter === 'all'
     ? projects
     : projects.filter(p => p.category === filter);
-
-  if (loading) {
-    return (
-      <div className="loading">
-        <div className="spinner"></div>
-      </div>
-    );
-  }
 
   return (
     <div className="projects-page">
@@ -85,7 +61,7 @@ const Projects = () => {
                     </div>
                     <div className="meta-item">
                       <i className="fas fa-calendar"></i>
-                      <span>{new Date(project.completedDate).toLocaleDateString('vi-VN')}</span>
+                      <span>{new Date(project.completedDate + 'T00:00:00').toLocaleDateString('vi-VN')}</span>
                     </div>
                   </div>
                 </div>
