@@ -1,0 +1,259 @@
+/* Page Header */
+.page-header {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.page-header p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Service Detail */
+.service-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 80px;
+  padding: 30px;
+  border-radius: 15px;
+  transition: background-color 2s ease;
+  scroll-margin-top: 100px;
+  /* Offset for fixed header */
+}
+
+.service-detail.reverse {
+  direction: rtl;
+}
+
+.service-detail.reverse>* {
+  direction: ltr;
+}
+
+.service-image {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.service-image:hover img {
+  transform: scale(1.05);
+}
+
+.service-content {
+  padding: 20px;
+}
+
+.service-icon-large {
+  font-size: 60px;
+  color: #667eea;
+  margin-bottom: 20px;
+}
+
+.service-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.service-content p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.service-features {
+  list-style: none;
+  margin: 25px 0;
+}
+
+.service-features li {
+  padding: 12px 0;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.service-features i {
+  color: #667eea;
+  font-size: 18px;
+}
+
+/* Process Section */
+.process-section {
+  background: #f8f9fa;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.process-step {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+}
+
+.process-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto 20px;
+}
+
+.process-step h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.process-step p {
+  color: #666;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background: #667eea;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background: white;
+  color: #667eea;
+}
+
+.btn-white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: #667eea;
+}
+
+.btn i {
+  margin-right: 8px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .service-detail {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .service-detail.reverse {
+    direction: ltr;
+  }
+
+  .service-image img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 32px;
+  }
+
+  .service-content h2 {
+    font-size: 26px;
+  }
+
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

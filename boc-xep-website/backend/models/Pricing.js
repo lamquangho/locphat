@@ -1,0 +1,30 @@
+const mongoose = require('mongoose');
+
+const pricingSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true
+  },
+  price: {
+    type: String,
+    required: true
+  },
+  unit: {
+    type: String,
+    required: true
+  },
+  features: [{
+    type: String
+  }],
+  featured: {
+    type: Boolean,
+    default: false
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now
+  }
+});
+
+module.exports = mongoose.model('Pricing', pricingSchema);
+
