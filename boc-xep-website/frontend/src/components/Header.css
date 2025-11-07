@@ -152,6 +152,12 @@
     display: none;
   }
 
+  /* Compact top bar for mobile */
+  .top-bar {
+    padding: 6px 0;
+    font-size: 13px;
+  }
+
   .logo-icon {
     width: 40px;
     height: 40px;
@@ -161,14 +167,21 @@
     font-size: 20px;
   }
 
+  /* Reduce navbar height for more content space */
+  .navbar .container {
+    min-height: 60px;
+  }
+
   .mobile-toggle {
     display: block;
   }
 
+  /* Mobile menu: reduce top offset and enable scrolling within menu */
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 120px;
+    top: 100px;
+    /* below top-bar + navbar */
     flex-direction: column;
     background: white;
     width: 100%;
@@ -177,6 +190,9 @@
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     padding: 20px 0;
     gap: 0;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .nav-menu.active {

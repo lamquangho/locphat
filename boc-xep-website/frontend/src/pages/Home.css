@@ -459,12 +459,24 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+
+  /* Hero: reduce vertical space */
+  .hero {
+    padding: 70px 15px;
+    min-height: 400px;
+  }
+
   .hero-title {
     font-size: 32px;
   }
 
   .hero-subtitle {
     font-size: 16px;
+  }
+
+  /* Sections: compact spacing */
+  .section {
+    padding: 50px 15px;
   }
 
   .section-title {
@@ -475,6 +487,16 @@
     font-size: 36px;
   }
 
+  /* Cards: tighter padding for better fit */
+  .service-card {
+    padding: 24px 20px;
+  }
+
+  .feature-icon {
+    font-size: 48px;
+  }
+
+  /* Pricing table readability */
   .pricing-table-wrapper {
     margin-bottom: 30px;
   }
@@ -498,6 +520,16 @@
     font-size: 14px;
   }
 
+  /* Pricing cards: compact spacing and headline size */
+  .pricing-card {
+    padding: 24px 20px;
+  }
+
+  .price {
+    font-size: 32px;
+  }
+
+  /* Note block */
   .pricing-note {
     flex-direction: column;
     padding: 20px;
@@ -509,6 +541,11 @@
 
   .note-content h4 {
     font-size: 18px;
+  }
+
+  /* CTA section: reduce vertical space and stack buttons */
+  .cta-section {
+    padding: 50px 15px;
   }
 
   .cta-buttons {

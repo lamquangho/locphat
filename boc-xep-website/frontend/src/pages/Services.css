@@ -235,16 +235,61 @@
 }
 
 @media (max-width: 768px) {
+
+  /* Page header: reduce padding and subtitle size */
+  .page-header {
+    padding: 60px 15px;
+  }
+
   .page-header h1 {
     font-size: 32px;
+  }
+
+  .page-header p {
+    font-size: 16px;
+  }
+
+  /* Service detail: single column with tighter spacing */
+  .service-detail {
+    gap: 24px;
+    padding: 20px;
+  }
+
+  .service-image img {
+    height: 220px;
+  }
+
+  .service-icon-large {
+    font-size: 48px;
+  }
+
+  .service-content {
+    padding: 10px 0;
   }
 
   .service-content h2 {
     font-size: 26px;
   }
 
+  /* Process steps: tighter card padding and smaller step number */
   .process-steps {
     grid-template-columns: 1fr;
+  }
+
+  .process-step {
+    padding: 24px;
+  }
+
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 0 auto 16px;
+  }
+
+  /* CTA section: compact spacing, stack buttons */
+  .cta-section {
+    padding: 60px 15px;
   }
 
   .cta-buttons {
