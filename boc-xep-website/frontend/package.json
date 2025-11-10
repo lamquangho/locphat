@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^1.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
     "react-router-dom": "^6.16.0",
-    "react-scripts": "5.0.1",
-    "axios": "^1.5.0",
-    "react-icons": "^4.11.0"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -16,7 +16,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "tunnel": "lt --port 3000 --subdomain boc-xep-frontend"
+    "tunnel": "lt --port 3000 --subdomain boc-xep-frontend",
+    "tw:build": "tailwindcss -i ./src/index.css -o ./src/tailwind-output.css -m",
+    "tw:watch": "tailwindcss -i ./src/index.css -o ./src/tailwind-output.css --watch"
   },
   "eslintConfig": {
     "extends": [
@@ -35,6 +37,10 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000"
+  "proxy": "http://localhost:5000",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18"
+  }
 }
-

@@ -1,3 +1,8 @@
+/* Tailwind CSS layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -20,11 +25,9 @@ body {
   --gray: #666;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+/* Use Tailwind's built-in `container` utility class directly in markup.
+   Do not `@apply container` here to avoid circular dependency.
+   For paddings, add classes like `px-4 sm:px-6 lg:px-8` on the same element in JSX if needed. */
 
 button {
   cursor: pointer;
@@ -48,6 +51,7 @@ img {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -58,6 +62,7 @@ img {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -81,7 +86,11 @@ img {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+  0% {
+    transform: rotate(0deg);
+  }
 
+  100% {
+    transform: rotate(360deg);
+  }
+}
