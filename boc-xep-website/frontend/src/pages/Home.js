@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { servicesData, pricingData } from '../data/staticData';
+import SEO from '../components/SEO';
 import './Home.css';
 
 const Home = () => {
@@ -9,6 +10,12 @@ const Home = () => {
 
   return (
     <div className="home">
+      <SEO
+        title="Trang Chủ"
+        description="Dịch vụ bốc xếp chuyên nghiệp tại TPHCM - Chuyển nhà, chuyển văn phòng trọn gói, cho thuê nhân công uy tín. Phục vụ 24/7, giá cả hợp lý, đội ngũ chuyên nghiệp với 5+ năm kinh nghiệm."
+        keywords="bốc xếp TPHCM,bốc xếp Bình Dương, bốc xếp, dịch vụ bốc xếp, chuyển nhà trọn gói, chuyển văn phòng, cho thuê nhân công, bốc xếp hàng hóa, vận chuyển hàng hóa, bốc xếp container, bốc xếp kho"
+        url="/"
+      />
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-overlay"></div>

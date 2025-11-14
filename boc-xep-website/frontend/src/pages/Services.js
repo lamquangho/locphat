@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { servicesData } from '../data/staticData';
+import SEO from '../components/SEO';
 import './Services.css';
 
 const Services = () => {
@@ -30,6 +31,12 @@ const Services = () => {
 
   return (
     <div className="services-page">
+      <SEO
+        title="Dịch Vụ Bốc Xếp"
+        description="Dịch vụ bốc xếp chuyên nghiệp: bốc xếp hàng hóa, chuyển nhà, chuyển văn phòng, cho thuê nhân công, bốc xếp container, vận chuyển vật tư công trình. Quy trình làm việc 6 bước chuyên nghiệp."
+        keywords="dịch vụ bốc xếp, bốc xếp hàng hóa, chuyển nhà, bốc xếp Bình Dương,bốc xếp TPHCM, bốc xếp, bốc xếp, chuyển trọ giá sinh viên, chuyển văn phòng, cho thuê nhân công, bốc xếp container, vận chuyển vật tư, bốc xếp đồ nội thất, dọn kho"
+        url="/services"
+      />
       {/* Page Header */}
       <section className="page-header">
         <div className="container">
@@ -130,8 +137,8 @@ const Services = () => {
             <Link to="/contact" className="btn btn-white">
               <i className="fas fa-envelope"></i> Liên hệ ngay
             </Link>
-            <a href="tel:0939779123" className="btn btn-outline">
-              <i className="fas fa-phone"></i> 0939 779 123
+            <a href="tel:0921172210" className="btn btn-outline">
+              <i className="fas fa-phone"></i> 0921172210
             </a>
           </div>
         </div>

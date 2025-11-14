@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { projectsData } from '../data/staticData';
+import SEO from '../components/SEO';
 import './Projects.css';
 
 const Projects = () => {
@@ -14,6 +15,12 @@ const Projects = () => {
 
   return (
     <div className="projects-page">
+      <SEO
+        title="Dự Án Đã Thực Hiện"
+        description="Xem các dự án bốc xếp, chuyển kho, chuyển nhà đã hoàn thành của chúng tôi tại TPHCM và các tỉnh lân cận. 100% khách hàng hài lòng với chất lượng dịch vụ."
+        keywords="dự án bốc xếp, dự án chuyển kho, dự án chuyển nhà, bốc xếp container, bốc xếp kho hàng, dự án đã hoàn thành"
+        url="/projects"
+      />
       {/* Page Header */}
       <section className="page-header">
         <div className="container">

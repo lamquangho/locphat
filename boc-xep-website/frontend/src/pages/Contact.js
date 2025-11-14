@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import './Contact.css';
 
 const Contact = () => {
@@ -8,6 +9,12 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
+      <SEO
+        title="Liên Hệ"
+        description="Liên hệ với chúng tôi qua Zalo, Facebook hoặc điện thoại để được tư vấn miễn phí về dịch vụ bốc xếp, chuyển nhà, chuyển văn phòng. Hỗ trợ 24/7."
+        keywords="liên hệ bốc xếp, tư vấn bốc xếp, hotline bốc xếp, zalo bốc xếp, số điện thoại bốc xếp"
+        url="/contact"
+      />
       {/* Page Header */}
       <section className="page-header">
         <div className="container">
