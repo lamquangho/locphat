@@ -5,7 +5,7 @@ import './Contact.css';
 const Contact = () => {
   // Thay đổi các link này theo ý bạn
   const ZALO_LINK = 'https://zalo.me/0921172210'; // Thay bằng link Zalo của bạn
-  const FACEBOOK_GROUP = 'https://www.facebook.com/share/14TmkZ2ZGAe'; // Thay bằng link Facebook Group
+  // const FACEBOOK_GROUP = 'https://www.facebook.com/share/14TmkZ2ZGAe'; // Thay bằng link Facebook Group
 
   return (
     <div className="contact-page">
