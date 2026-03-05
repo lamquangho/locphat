@@ -11,7 +11,7 @@ const Contact = () => {
     <div className="contact-page">
       <SEO
         title="Liên Hệ"
-        description="Liên hệ với chúng tôi qua Zalo, Facebook hoặc điện thoại để được tư vấn miễn phí về dịch vụ bốc xếp, chuyển nhà, chuyển văn phòng. Hỗ trợ 24/7."
+        description="Liên hệ với chúng tôi qua Zalo, Facebook hoặc điện thoại để được tư vấn miễn phí về dịch vụ bốc xếp, chuyển nhà + chuyển trọ, chuyển dọn kho + văn phòng và bốc pin năng lượng mặt trời. Hỗ trợ 24/7."
         keywords="liên hệ bốc xếp, tư vấn bốc xếp, hotline bốc xếp, zalo bốc xếp, số điện thoại bốc xếp"
         url="/contact"
       />
@@ -51,7 +51,7 @@ const Contact = () => {
             </a>
 
             {/* Facebook Group */}
-            <a
+            {/* <a
               href={FACEBOOK_GROUP}
               target="_blank"
               rel="noopener noreferrer"
@@ -66,7 +66,7 @@ const Contact = () => {
                 <span>Tham gia ngay</span>
                 <i className="fas fa-arrow-right"></i>
               </div>
-            </a>
+            </a> */}
 
             {/* Phone Number - Display as plain text */}
             <div className="contact-method-card phone">
@@ -76,8 +76,6 @@ const Contact = () => {
               <h3>Gọi Điện Thoại</h3>
               <p>Tư vấn miễn phí 24/7</p>
               <div className="phone-number-box">
-                <span className="phone-number-text">0773800431</span>
-                <span className="phone-divider-text">hoặc</span>
                 <span className="phone-number-text">0921172210</span>
               </div>
               <p className="phone-note">
@@ -157,4 +155,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

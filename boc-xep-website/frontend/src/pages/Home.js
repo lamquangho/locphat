@@ -12,8 +12,8 @@ const Home = () => {
     <div className="home">
       <SEO
         title="Trang Chủ"
-        description="Dịch vụ bốc xếp chuyên nghiệp tại TPHCM - Chuyển nhà, chuyển văn phòng trọn gói, cho thuê nhân công uy tín. Phục vụ 24/7, giá cả hợp lý, đội ngũ chuyên nghiệp với 5+ năm kinh nghiệm."
-        keywords="bốc xếp TPHCM,bốc xếp Bình Dương, bốc xếp, dịch vụ bốc xếp, chuyển nhà trọn gói, chuyển văn phòng, cho thuê nhân công, bốc xếp hàng hóa, vận chuyển hàng hóa, bốc xếp container, bốc xếp kho"
+        description="Dịch vụ bốc xếp chuyên nghiệp tại TPHCM - Chuyển nhà + chuyển trọ, chuyển dọn kho + văn phòng, cho thuê nhân công và bốc pin năng lượng mặt trời. Phục vụ 24/7, giá cả hợp lý."
+        keywords="bốc xếp TPHCM, bốc xếp Bình Dương, dịch vụ bốc xếp, chuyển nhà chuyển trọ, chuyển dọn kho văn phòng, cho thuê nhân công, bốc pin năng lượng mặt trời, bốc xếp hàng hóa, vận chuyển hàng hóa, bốc xếp container, bốc xếp kho"
         url="/"
       />
       {/* Hero Section */}

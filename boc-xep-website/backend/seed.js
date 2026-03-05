@@ -50,20 +50,20 @@ const servicesData = [
       'Giá cả cạnh tranh'
     ]
   },
+  // {
+  //   title: 'Cho Thuê Lao Động',
+  //   description: 'Chuyên cung cấp dịch vụ lao động thời vụ theo dự án, hợp đồng ngắn hạn, theo tháng, theo năm. Cho thuê nhân công, công nhân sản xuất, điện tử chuyên nghiệp.',
+  //   icon: 'fa-users',
+  //   imageUrl: IMAGE_CONFIG.services.laodong,
+  //   features: [
+  //     'Nhân công có kinh nghiệm',
+  //     'Linh hoạt thời gian',
+  //     'Hợp đồng rõ ràng',
+  //     'Quản lý chặt chẽ'
+  //   ]
+  // },
   {
-    title: 'Cho Thuê Lao Động',
-    description: 'Chuyên cung cấp dịch vụ lao động thời vụ theo dự án, hợp đồng ngắn hạn, theo tháng, theo năm. Cho thuê nhân công, công nhân sản xuất, điện tử chuyên nghiệp.',
-    icon: 'fa-users',
-    imageUrl: IMAGE_CONFIG.services.laodong,
-    features: [
-      'Nhân công có kinh nghiệm',
-      'Linh hoạt thời gian',
-      'Hợp đồng rõ ràng',
-      'Quản lý chặt chẽ'
-    ]
-  },
-  {
-    title: 'Dịch Vụ Chuyển Nhà',
+    title: 'Dịch Vụ Chuyển Nhà + Chuyển trọ',
     description: 'Dịch vụ chuyển nhà giá rẻ trọn gói chuyên nghiệp. Bạn có thể hoàn toàn yên tâm về chất lượng dịch vụ và cung cách phục vụ của đội ngũ nhân viên.',
     icon: 'fa-home',
     imageUrl: IMAGE_CONFIG.services.chuyennha,
@@ -74,20 +74,20 @@ const servicesData = [
       'Giá trọn gói'
     ]
   },
+  // {
+  //   title: 'Dịch Vụ Chuyển Trọ',
+  //   description: 'Dịch vụ chuyển trọ giá rẻ sinh viên trọn gói chuyên nghiệp. Bạn có thể hoàn toàn yên tâm về chất lượng dịch vụ và cung cách phục vụ của đội ngũ nhân viên.',
+  //   icon: 'fa-home',
+  //   imageUrl: 'https://nhanhmaimoi.vn/wp-content/uploads/2021/05/dong-goi-do-dac-de-vo.jpg',
+  //   features: [
+  //     'Đóng gói chuyên nghiệp',
+  //     'Vận chuyển an toàn',
+  //     'Bảo hiểm tài sản',
+  //     'Giá trọn gói'
+  //   ]
+  // },
   {
-    title: 'Dịch Vụ Chuyển Trọ',
-    description: 'Dịch vụ chuyển trọ giá rẻ sinh viên trọn gói chuyên nghiệp. Bạn có thể hoàn toàn yên tâm về chất lượng dịch vụ và cung cách phục vụ của đội ngũ nhân viên.',
-    icon: 'fa-home',
-    imageUrl: 'https://nhanhmaimoi.vn/wp-content/uploads/2021/05/dong-goi-do-dac-de-vo.jpg',
-    features: [
-      'Đóng gói chuyên nghiệp',
-      'Vận chuyển an toàn',
-      'Bảo hiểm tài sản',
-      'Giá trọn gói'
-    ]
-  },
-  {
-    title: 'Dịch Vụ Chuyển Dọn Kho',
+    title: 'Dịch Vụ Chuyển Dọn Kho + Văn phòng',
     description: 'Dịch vụ dọn kho chuyên nghiệp, an toàn và nhanh chóng. Hàng hóa trong kho được phân loại, đóng gói và vận chuyển gọn gàng, giúp tiết kiệm thời gian và công sức cho khách hàng.',
     icon: 'fa-warehouse',
     imageUrl: 'https://bocxeptphcm.com/wp-content/uploads/2024/06/chuyen-kho-xuong-tron-goi.jpg',

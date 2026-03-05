@@ -12,8 +12,8 @@ const SEO = ({
   locale = 'vi_VN'
 }) => {
   const defaultTitle = 'Bốc Xếp Nhanh 24h - Dịch Vụ Bốc Xếp Chuyên Nghiệp TPHCM';
-  const defaultDescription = 'Dịch vụ bốc xếp chuyên nghiệp, chuyển nhà văn phòng trọn gói, cho thuê nhân công uy tín tại TPHCM. Phục vụ 24/7, giá cả hợp lý, đội ngũ chuyên nghiệp.';
-  const defaultKeywords = 'bốc xếp, bốc xếp hàng hóa, dịch vụ bốc xếp, chuyển nhà, chuyển văn phòng, cho thuê nhân công, bốc xếp TPHCM, vận chuyển hàng hóa, bốc xếp container, bốc xếp kho';
+  const defaultDescription = 'Dịch vụ bốc xếp chuyên nghiệp, chuyển nhà + chuyển trọ, chuyển dọn kho + văn phòng, cho thuê nhân công và bốc pin năng lượng mặt trời tại TPHCM. Phục vụ 24/7, giá cả hợp lý.';
+  const defaultKeywords = 'bốc xếp, bốc xếp hàng hóa, dịch vụ bốc xếp, chuyển nhà chuyển trọ, chuyển dọn kho văn phòng, cho thuê nhân công, bốc pin năng lượng mặt trời, bốc xếp TPHCM, vận chuyển hàng hóa, bốc xếp container, bốc xếp kho';
   const defaultImage = 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200';
   const siteUrl = process.env.REACT_APP_SITE_URL || 'https://locphat-1.onrender.com';
 
@@ -65,7 +65,8 @@ const SEO = ({
       'Chuyển nhà',
       'Chuyển văn phòng',
       'Cho thuê nhân công',
-      'Vận chuyển hàng hóa'
+      'Vận chuyển hàng hóa',
+      'Bốc pin năng lượng mặt trời'
     ]
   };
 

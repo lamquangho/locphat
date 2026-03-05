@@ -42,7 +42,7 @@ export const servicesData = [
         title: 'Cho Thuê Lao Động',
         description: 'Chuyên cung cấp dịch vụ lao động thời vụ theo dự án, hợp đồng ngắn hạn, theo tháng, theo năm. Cho thuê nhân công, công nhân sản xuất, điện tử chuyên nghiệp.',
         icon: 'fa-users',
-        imageUrl: IMAGE_CONFIG.services.laodong,
+        imageUrl: 'https://res.cloudinary.com/dx8ffnhq3/image/upload/v1772712439/thueNhanCong_nk3ba6.jpg',
         features: [
             'Nhân công có kinh nghiệm',
             'Linh hoạt thời gian',
@@ -52,8 +52,8 @@ export const servicesData = [
     },
     {
         _id: 'service-3',
-        title: 'Dịch Vụ Chuyển Nhà',
-        description: 'Dịch vụ chuyển nhà giá rẻ trọn gói chuyên nghiệp. Bạn có thể hoàn toàn yên tâm về chất lượng dịch vụ và cung cách phục vụ của đội ngũ nhân viên.',
+        title: 'Dịch Vụ Chuyển Nhà + Chuyển Trọ',
+        description: 'Dịch vụ chuyển nhà và chuyển trọ trọn gói, phù hợp hộ gia đình, sinh viên và người đi làm. Đội ngũ chuyên nghiệp hỗ trợ đóng gói, vận chuyển an toàn, nhanh chóng với chi phí hợp lý.',
         icon: 'fa-home',
         imageUrl: IMAGE_CONFIG.services.chuyennha,
         features: [
@@ -64,26 +64,13 @@ export const servicesData = [
         ]
     },
     {
-        _id: 'service-4',
-        title: 'Dịch Vụ Chuyển Trọ',
-        description: 'Dịch vụ chuyển trọ giá rẻ sinh viên trọn gói chuyên nghiệp. Bạn có thể hoàn toàn yên tâm về chất lượng dịch vụ và cung cách phục vụ của đội ngũ nhân viên.',
-        icon: 'fa-home',
-        imageUrl: 'https://nhanhmaimoi.vn/wp-content/uploads/2021/05/dong-goi-do-dac-de-vo.jpg',
-        features: [
-            'Đóng gói chuyên nghiệp',
-            'Vận chuyển an toàn',
-            'Bảo hiểm tài sản',
-            'Giá trọn gói'
-        ]
-    },
-    {
         _id: 'service-5',
-        title: 'Dịch Vụ Chuyển Dọn Kho',
-        description: 'Dịch vụ dọn kho chuyên nghiệp, an toàn và nhanh chóng. Hàng hóa trong kho được phân loại, đóng gói và vận chuyển gọn gàng, giúp tiết kiệm thời gian và công sức cho khách hàng.',
+        title: 'Dịch Vụ Chuyển Dọn Kho + Văn Phòng',
+        description: 'Dịch vụ chuyển dọn kho và văn phòng chuyên nghiệp, an toàn, nhanh chóng. Chúng tôi hỗ trợ phân loại, đóng gói, di dời thiết bị và hồ sơ giúp doanh nghiệp tiết kiệm thời gian, công sức.',
         icon: 'fa-warehouse',
         imageUrl: 'https://bocxeptphcm.com/wp-content/uploads/2024/06/chuyen-kho-xuong-tron-goi.jpg',
         features: [
-            'Phân loại và sắp xếp hàng hóa',
+            'Phân loại và sắp xếp hàng hóa, thiết bị văn phòng',
             'Thu gom và xử lý đồ không còn sử dụng',
             'Vận chuyển nhanh chóng, an toàn',
             'Tiết kiệm chi phí và thời gian'
@@ -113,6 +100,19 @@ export const servicesData = [
             'Trang thiết bị hỗ trợ nâng hạ hiện đại',
             'Đảm bảo an toàn tuyệt đối cho đồ nội thất',
             'Phục vụ nhanh chóng, 24/7'
+        ]
+    },
+    {
+        _id: 'service-8',
+        title: 'Bốc Pin Năng Lượng Mặt Trời',
+        description: 'Dịch vụ bốc xếp, di dời pin năng lượng mặt trời chuyên nghiệp cho nhà dân, nhà xưởng và công trình. Quy trình đảm bảo an toàn tấm pin, khung đỡ và thiết bị điện đi kèm.',
+        icon: 'fa-solar-panel',
+        imageUrl: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800',
+        features: [
+            'Bốc xếp tấm pin cẩn thận, chống nứt vỡ',
+            'Di dời khung, phụ kiện và thiết bị liên quan',
+            'Đội ngũ có kinh nghiệm làm việc trên cao',
+            'Phục vụ nhanh, linh hoạt theo tiến độ công trình'
         ]
     }
 ];
@@ -365,7 +365,7 @@ export const projectsData = [
         _id: 'project-1',
         title: 'Dự Án Bốc Xếp Kho Hàng TPHCM',
         description: 'Bốc xếp và sắp xếp 500 tấn hàng hóa trong kho hàng 5000m² tại Quận 9, TPHCM',
-        client: 'Công ty TNHH Logistics Việt Nam',
+        client: 'Khách hàng cá nhân',
         location: 'Quận 9, TP. Hồ Chí Minh',
         imageUrl: IMAGE_CONFIG.projects.warehouse1,
         completedDate: '2024-10-15',
@@ -373,21 +373,21 @@ export const projectsData = [
     },
     {
         _id: 'project-2',
-        title: 'Chuyển Kho Xưởng Bình Dương',
+        title: 'Chuyển Kho TP.HCM',
         description: 'Di chuyển toàn bộ thiết bị và hàng hóa từ kho cũ sang kho mới rộng 10,000m²',
-        client: 'Công ty CP Sản Xuất ABC',
-        location: 'Bình Dương',
+        client: 'Khách hàng cá nhân',
+        location: 'Quận 12, TP. Hồ Chí Minh',
         imageUrl: IMAGE_CONFIG.projects.warehouse2,
         completedDate: '2024-09-20',
         category: 'Chuyển kho'
     },
     {
         _id: 'project-3',
-        title: 'Bốc Xếp Hàng Container Cảng Cát Lái',
-        description: 'Bốc xếp 50 container hàng hóa xuất khẩu tại cảng Cát Lái',
-        client: 'Công ty Xuất Nhập Khẩu DEF',
+        title: 'Bốc Xếp Hàng Container',
+        description: 'Bốc xếp 50 container hàng hóa xuất khẩu ',
+        client: 'Khách hàng cá nhân',
         location: 'Quận 2, TP. Hồ Chí Minh',
-        imageUrl: IMAGE_CONFIG.projects.factory1,
+        imageUrl: 'https://res.cloudinary.com/dx8ffnhq3/image/upload/v1772713142/bocContainer_jdqj8v.jpg',
         completedDate: '2024-07-25',
         category: 'Bốc xếp container'
     },
@@ -397,7 +397,7 @@ export const projectsData = [
         description: 'Dịch vụ chuyển nhà trọn gói cho 15 gia đình trong cùng một ngày',
         client: 'Khách hàng cá nhân',
         location: 'Thủ Đức, TP. Hồ Chí Minh',
-        imageUrl: IMAGE_CONFIG.projects.moving1,
+        imageUrl: 'https://res.cloudinary.com/dx8ffnhq3/image/upload/v1772713305/chuyenNha_h1eml7.jpg',
         completedDate: '2024-11-01',
         category: 'Chuyển nhà'
     },
@@ -405,7 +405,7 @@ export const projectsData = [
         _id: 'project-5',
         title: 'Bốc cont bãi, chành xe',
         description: 'Thực hiện bốc xếp và vận chuyển hàng hóa container tại bãi và chành xe, đảm bảo tiến độ giao hàng nhanh chóng, an toàn, đúng lịch trình.',
-        client: 'Công ty Logistics ABC',
+        client: 'Khách hàng cá nhân',
         location: 'Cảng Cát Lái, TP. Hồ Chí Minh',
         imageUrl: 'https://vantaidongnai.com.vn/wp-content/uploads/xep-container.jpg',
         completedDate: '2024-08-10',

@@ -34,8 +34,8 @@ const Footer = () => {
             <ul>
               <li><Link to="/services">Dịch vụ bốc xếp</Link></li>
               <li><Link to="/services">Cho thuê lao động</Link></li>
-              <li><Link to="/services">Dịch vụ chuyển nhà</Link></li>
-              <li><Link to="/services">Dịch vụ chuyển văn phòng</Link></li>
+              <li><Link to="/services">Dịch vụ chuyển nhà + chuyển trọ</Link></li>
+              <li><Link to="/services">Dịch vụ chuyển dọn kho + văn phòng</Link></li>
             </ul>
           </div>
 
@@ -57,7 +57,7 @@ const Footer = () => {
               </li> */}
               <li>
                 <i className="fas fa-phone"></i>
-                0773800431 hoặc 0921172210
+                0921172210
               </li>
               {/* <li>
                 <i className="fas fa-envelope"></i>

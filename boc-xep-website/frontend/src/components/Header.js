@@ -26,7 +26,7 @@ const Header = () => {
       <div className="top-bar">
         <div className="container">
           <div className="contact-info">
-            <span><i className="fas fa-phone"></i> 0773800431 hoặc 0921172210</span>
+            <span><i className="fas fa-phone"></i> 0921172210</span>
             {/* <span><i className="fas fa-envelope"></i> info@bocxepnhanh24h.com</span> */}
           </div>
           <div className="top-bar-right">

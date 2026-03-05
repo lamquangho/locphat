@@ -33,8 +33,8 @@ const Services = () => {
     <div className="services-page">
       <SEO
         title="Dịch Vụ Bốc Xếp"
-        description="Dịch vụ bốc xếp chuyên nghiệp: bốc xếp hàng hóa, chuyển nhà, chuyển văn phòng, cho thuê nhân công, bốc xếp container, vận chuyển vật tư công trình. Quy trình làm việc 6 bước chuyên nghiệp."
-        keywords="dịch vụ bốc xếp, bốc xếp hàng hóa, chuyển nhà, bốc xếp Bình Dương,bốc xếp TPHCM, bốc xếp, bốc xếp, chuyển trọ giá sinh viên, chuyển văn phòng, cho thuê nhân công, bốc xếp container, vận chuyển vật tư, bốc xếp đồ nội thất, dọn kho"
+        description="Dịch vụ bốc xếp chuyên nghiệp: bốc xếp hàng hóa, chuyển nhà + chuyển trọ, chuyển dọn kho + văn phòng, cho thuê nhân công, bốc pin năng lượng mặt trời, bốc xếp container và vận chuyển vật tư công trình."
+        keywords="dịch vụ bốc xếp, bốc xếp hàng hóa, chuyển nhà chuyển trọ, chuyển dọn kho văn phòng, bốc xếp Bình Dương, bốc xếp TPHCM, cho thuê nhân công, bốc pin năng lượng mặt trời, bốc xếp container, vận chuyển vật tư, bốc xếp đồ nội thất"
         url="/services"
       />
       {/* Page Header */}
